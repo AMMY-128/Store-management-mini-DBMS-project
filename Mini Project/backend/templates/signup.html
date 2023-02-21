@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="icon" type="image/gif/png" href="{{url_for('static',filename='css/23190124.png')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+    <script src ="{{url_for('static',filename='css/login.js')}}"></script>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Sign Up</h1>
+      <form method="post" action="signup">
+        <div class="txt_field">
+          <input type="text"  id="username" name="username" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field" action="signup">
+          <input type="email" id="email" name="email" required >
+          <span></span>
+          <label>Email-id</label>
+        </div>
+        <div class="txt_field" action="signup">
+          <input type="password"  id="password" name="password" required>
+          <span></span>
+          <label>Password</label>
+          
+        </div>
+        <input type="submit" value="Sign Up" onclick="validate()"><br><br>
+        <center><h4>Alread User?</h4> <a href="/login">Login Up</a> </h4></center>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
